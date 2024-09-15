@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import LoginSingnup from "./Pages/LoginSignup";
+import Cart from "./Pages/Cart";
 import Product from "./Pages/Product";
 import Footer from "./Components/Footer/Footer";
 import men_banner from "./Components/Asset/banner_mens.png";
@@ -32,6 +33,7 @@ function App() {
           <Route path="product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>
+          <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSingnup />} />
         </Routes>
         <Footer />
