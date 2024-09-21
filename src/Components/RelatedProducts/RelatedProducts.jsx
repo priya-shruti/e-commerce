@@ -6,7 +6,7 @@ import Item from "../Item/Item";
 const RelatedProducts = () => {
   return (
     <div className="realtedproducts">
-      <h1>Related Producrs</h1>
+      <h1>Related Products</h1>
       <hr />
       <div className="relatedproducts-item">
         {data_product.map((item, i) => {
